@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "dev": "nodemon",
     "heroku-postbuild": "npm install",
-    "start": "nodemon"
+    "start": "node index.js"
   },
   "dependencies": {
     "json-server": "^0.14.2",
