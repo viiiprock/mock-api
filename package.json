@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "heroku-postbuild": "npm install",
     "start": "nodemon"
   },
   "dependencies": {
