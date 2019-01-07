@@ -1,0 +1,17 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "description": "Mock api for test",
+  "main": "index.js",
+  "repository": "https://viiiprock@github.com/viiiprock/mock-api.git",
+  "author": "Son_dang <son.dang@doda100.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "json-server": "^0.14.2",
+    "nodemon": "^1.18.9"
+  }
+}
