@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "nodemon",
+    "dev": "PORT=8080 nodemon",
     "heroku-postbuild": "npm install",
     "start": "node index.js"
   },
