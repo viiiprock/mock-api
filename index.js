@@ -1,13 +1,11 @@
-const jsonServer = require("json-server");
-const server = jsonServer.create();
-const path = require("path");
-const router = jsonServer.router(path.join(__dirname, "db.json"));
-const middlewares = jsonServer.defaults();
+const express = require("express");
+const jsonGraphqlExpress = require("json-graphql-server");
+const data = require("./db");
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
+const app = express();
 
-server.use(middlewares);
-server.use(router);
-server.listen(port, () => {
-  console.log("JSON Server is running at http://localhost:" + port);
-});
+app.use("/graphql", jsonGraphqlExpress.default(data));
+app.listen(PORT, () =>
+  console.log("JSON Server is running at http://localhost:" + PORT + "/graphql")
+);
