@@ -13,6 +13,8 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "json-graphql-server": "^2.1.3",
