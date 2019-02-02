@@ -2,7 +2,7 @@ const express = require("express");
 const jsonGraphqlExpress = require("json-graphql-server");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const data = require("./db");
+const data = require("./data");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
