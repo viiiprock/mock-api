@@ -6,26 +6,26 @@ module.exports = [
       {
         id: 1,
         name: "Shiziling",
-        voteUserIDs: [1, 4, 8, 9]
+        voteUserIDs: [2, 4, 8, 9]
       },
       {
         id: 2,
         name: "Tolkmicko",
-        voteUserIDs: [7, 2]
+        voteUserIDs: []
       },
       {
         id: 3,
         name: "Intendente Alvear",
-        voteUserIDs: [8, 1, 6]
+        voteUserIDs: [8, 5, 6]
       },
       {
         id: 4,
         name: "Buenaventura",
-        voteUserIDs: [1, 7, 3, 9, 10, 11]
+        voteUserIDs: [5, 7, 3, 9, 10, 11]
       }
     ],
     threadID: 10,
-    closed: true
+    closed: false
   },
   {
     id: 2,
