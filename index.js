@@ -4,6 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const deepClone = require("./deepClone");
 const users = require("./fake/users");
+const departments = require("./fake/departments");
 const polls = require("./fake/polls");
 const forums = require("./fake/forums");
 const threads = require("./fake/threads");
@@ -19,7 +20,8 @@ const mockDatas = {
   threads: deepClone(threads),
   tags: deepClone(tags),
   polls: deepClone(polls),
-  courses: deepClone(courses)
+  courses: deepClone(courses),
+  departments: deepClone(departments)
 };
 
 app.use("/graphql", cors(), bodyParser.json(), jsonGraphqlExpress.default(mockDatas));
