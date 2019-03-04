@@ -10,6 +10,7 @@ const forums = require("./fake/forums");
 const threads = require("./fake/threads");
 const courses = require("./fake/courses");
 const tags = require("./fake/tags");
+const docCategories = require("./fake/doc-categories");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -21,7 +22,8 @@ const mockDatas = {
   tags: deepClone(tags),
   polls: deepClone(polls),
   courses: deepClone(courses),
-  departments: deepClone(departments)
+  departments: deepClone(departments),
+  docCategories: deepClone(docCategories)
 };
 
 app.use("/graphql", cors(), bodyParser.json(), jsonGraphqlExpress.default(mockDatas));
